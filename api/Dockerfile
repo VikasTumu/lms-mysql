@@ -7,6 +7,8 @@ COPY package*.json ./
 RUN npm install
 # Build app
 COPY . .
+npx prisma migrate dev --name init
+npx prisma migrate reset
 RUN npx prisma generate
 RUN npm run build
 # Expose port
