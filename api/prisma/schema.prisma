@@ -8,7 +8,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://vikas:Admin@123@3.22.175.208:3306/lmsdb"
+  url      = "mysql://vikas:Admin@123@3.138.196.139:3306/lmsdb"
 }
 
 model Course {
